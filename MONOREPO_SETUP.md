@@ -105,6 +105,7 @@ NestJS-based API service with custom engine architecture:
 - **Torque Calculator**: Business logic for power calculations
 
 **Features:**
+
 - Real-time torque and power calculations
 - Vehicle status monitoring
 - Health check endpoints
@@ -120,6 +121,7 @@ React + Vite web dashboard:
 - **Responsive**: Mobile-friendly design
 
 **Features:**
+
 - Live vehicle status display
 - Interactive torque curve visualization
 - Connection status indicator
@@ -165,6 +167,7 @@ The codebase uses automotive-inspired naming:
 ### Custom Scripts
 
 All npm scripts use motori-specific terminology:
+
 - `ignite`: Start development server
 - `forge`: Build for production
 - `inspect`: Check code quality

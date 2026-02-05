@@ -16,7 +16,14 @@ module.exports = {
     node: true,
     es2022: true,
   },
-  ignorePatterns: ['dist', 'node_modules', '*.config.js', '*.config.ts', '.eslintrc.js', '.prettierrc.js'],
+  ignorePatterns: [
+    'dist',
+    'node_modules',
+    '*.config.js',
+    '*.config.ts',
+    '.eslintrc.js',
+    '.prettierrc.js',
+  ],
   rules: {
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-explicit-any': 'warn',
