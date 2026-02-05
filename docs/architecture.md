@@ -30,6 +30,7 @@ Motori is structured as a monorepo containing multiple applications and shared p
 ### Monorepo
 
 We use a monorepo structure to:
+
 - Share code easily between applications
 - Maintain consistency across projects
 - Simplify dependency management

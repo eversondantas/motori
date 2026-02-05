@@ -1,0 +1,36 @@
+{
+  "name": "motori-workspace",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "motoriConfig": {
+    "engineType": "turbocharged-v8",
+    "powerOutput": "600hp",
+    "architecture": "monorepo-turbine"
+  },
+  "scripts": {
+    "api:ignite": "npm run ignite -w @motori/api",
+    "api:forge": "npm run forge -w @motori/api",
+    "web:ignite": "npm run ignite -w @motori/web",
+    "web:forge": "npm run forge -w @motori/web",
+    "types:forge": "npm run forge -w @motori/shared-types",
+    "lint:inspect": "eslint .",
+    "lint:repair": "eslint . --fix",
+    "style:inspect": "prettier --check .",
+    "style:repair": "prettier --write .",
+    "typecheck:all": "npm run typecheck -ws --if-present",
+    "nuke:modules": "find . -name node_modules -type d -prune -exec rm -rf {} +"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3"
+  }
+}

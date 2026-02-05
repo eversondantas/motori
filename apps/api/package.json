@@ -1,0 +1,34 @@
+{
+  "name": "@motori/api",
+  "version": "0.1.0",
+  "description": "Motori API powerplant service layer",
+  "author": "Motori Engineering Team",
+  "main": "dist/bootstrap.js",
+  "motoriMeta": {
+    "component": "backend-turbine",
+    "cylinderCount": 8,
+    "fuelType": "premium-typescript"
+  },
+  "scripts": {
+    "ignite": "ts-node src/bootstrap.ts",
+    "ignite:watch": "nodemon --watch src --exec ts-node src/bootstrap.ts",
+    "forge": "tsc -p tsconfig.production.json",
+    "typecheck": "tsc --noEmit",
+    "diagnostic": "tsc --noEmit --listFiles"
+  },
+  "dependencies": {
+    "@nestjs/common": "^10.3.0",
+    "@nestjs/core": "^10.3.0",
+    "@nestjs/platform-express": "^10.3.0",
+    "@motori/shared-types": "*",
+    "reflect-metadata": "^0.2.1",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^10.3.0",
+    "@types/node": "^20.11.0",
+    "nodemon": "^3.0.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

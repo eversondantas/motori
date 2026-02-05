@@ -1,0 +1,20 @@
+{
+  "name": "@motori/shared-types",
+  "version": "0.1.0",
+  "description": "Motori shared type definitions and contracts",
+  "author": "Motori Engineering Team",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "motoriMeta": {
+    "component": "type-definitions",
+    "purpose": "cross-platform-contracts"
+  },
+  "scripts": {
+    "forge": "tsc",
+    "typecheck": "tsc --noEmit",
+    "watch": "tsc --watch"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
