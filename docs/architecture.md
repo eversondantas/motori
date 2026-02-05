@@ -20,10 +20,10 @@ Motori is structured as a monorepo containing multiple applications and shared p
 
 ## Technology Stack
 
-- Frontend: [To be defined]
-- Backend: [To be defined]
+- Frontend: React (TypeScript) web application
+- Backend: Node.js REST API (TypeScript)
 - Mobile: Android (Kotlin/Java)
-- Infrastructure: [To be defined]
+- Infrastructure: Cloud-based (e.g., AWS) with containerized services, managed database, and IaC (e.g., Terraform)
 
 ## Architectural Decisions
 
