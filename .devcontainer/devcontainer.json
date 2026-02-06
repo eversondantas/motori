@@ -3,6 +3,13 @@
   "build": {
     "dockerfile": "Dockerfile"
   },
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "mounts": [
+    "source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/home/node/.ssh,readonly,type=bind,consistency=cached"
+  ],
   "postCreateCommand": "pnpm install",
   "postStartCommand": "pnpm lint && pnpm build",
   "forwardPorts": [3000, 5173],
@@ -21,7 +28,10 @@
         "ms-vscode.vscode-github-issue-notebooks",
         "openai.chatgpt",
         "prisma.prisma"
-      ]
+      ],
+      "settings": {
+        "git.terminalAuthentication": true
+      }
     }
   }
 }
