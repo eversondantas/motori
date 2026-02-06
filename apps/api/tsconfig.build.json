@@ -1,4 +1,5 @@
 {
   "extends": "./tsconfig.json",
-  "exclude": ["test", "**/*.spec.ts"]
+  "exclude": ["test", "**/*.spec.ts"],
+  "preserveWatchOutput": true
 }

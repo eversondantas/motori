@@ -7,5 +7,14 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true
   },
-  "include": ["src"]
+  "include": ["src"],
+  "watchOptions": {
+    "excludeDirectories": ["**/node_modules", "dist"]
+  },
+  "ts-node": {
+    "transpileOnly": true,
+    "files": true
+  },
+  "compileOnSave": false,
+  "preserveWatchOutput": true
 }
